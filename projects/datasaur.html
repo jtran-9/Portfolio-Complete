@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Justin Tran's Portfolio</title>
+        <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../navbar.css" rel="stylesheet">
+        <link href="../styles/project_page.css" rel="stylesheet">
+    </head>
+    <body id="datasaur">
+        <header>
+            <nav id="back">
+                <a href="/projects.html">&lt; Back</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Datasaur Royale</h2>
+            <hr>
+            <div class="project-info">
+                <section class="left-panel">
+                    <picture>
+                        <source srcset="/public/Desktop/datasaur-royale.webp" media="(min-width: 1024px)">
+                        <img class="thumbnail" src="/public/Mobile/datasaur-royale-mobile.webp" alt="a thumbnail of the homepage for my spending tracker app">
+                    </picture>
+                    <div class="social-media-links">
+                        <a href="https://github.com/Jussttin9/DatasaurRoyale"><img src="/public/github-mark.png" height="50" width="52" alt="Github link"></a>
+                        <a href="https://devpost.com/software/dinosaur-simulation-nite"><img src="/public/website.png" height="50" width="52" alt="Devpost project showcase link"></a>
+                    </div>
+                </section>
+                <article class="right-panel">
+                    <section class="project-desc">
+                        <h3> Technologies Used</h3>
+                        <ul>
+                            <li>Python</li>
+                        </ul>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Information</h3>
+                        <p>Datasaur Royale is a battle simulator, on top of Pygame, between different kinds of dinosaurs each with different traits, attempting to find the best traits that allow dinosaurs to survive. Traits may affect their speed, how much energy they can store and consume, their combat capabilities, and other behaviors such as passive or more aggressive behaviors. There are terrain elements such as grass and ground which affect some dinosaur behaviors. Each generation spawns 25 dinosaurs and they fight until 4 are left remaining. These are assumed to be the dinosaurs with the best traits. The next generations will contain the children of the 4 winning dinosaurs from the previous generation. However, each offspring has a random chance to mutate and take on a completely different trait. As generations pass, users can observe which dinosaurs tend to survive through several generations and which die off quickly.</p>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Struggles and Solutions</h3>
+                        <p>For my first hackathon, we were required to create some program that utilizes machine learning concepts. The year&apos;s theme was dinosaurs, so me and my team had started discussing project ideas varying from a dinosaur identification model, that would be able to scan a dinosaur picture and identify what type of dinosaur it was, to a dinosaur creator. In the end, we thought that creating a dinosaur fighting simulator would be fun to do. We started brainstorming about how we would be able to do this. We decided to make the game using pygame since it would be a useful library that&apos;ll help visualize the dinosaur battles. But none of us were familiar with making anything in pygame. In order to pull this off, we decided to look up tutorials that use pygame to create a simple game. In addition, we looked up the documentation for the specific library and specific library functions that might help us develop this project. As a result, we&apos;ve established a basic pygame terrain that contained grass tiles and ground tiles. Our idea was that we&apos;d have a bunch of dinosaurs of varying behavior types and in order to survive and be the last one standing, dinosaurs would either have to eat grass in order to maintain their energy or fight other dinosaurs. So in order to find the best dinosaur behavior, we decided to create a generic Dinosaur class that had a dinosaur&apos;s health, strenght / power stat, behavior types, etc. We decided to create different behavior types such as dinosaurs that only prioritizes eating grass to survive whilst other dinosaurs prioritized fighting against other dinosaurs. In order to determine the best dinosaur type, for each generation, we take the behaviors of the top 4 dinosaurs and move them onto the next generation. We repeat this until we see a consistent dinosaur behavior constantly surviving through multiple generations.</p>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <nav id="mobile-back">
+            <a href="/projects.html">&lt; Back</a>
+        </nav>
+    </body>
+</html>

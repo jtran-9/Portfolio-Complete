@@ -1,0 +1,80 @@
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+#mobile-navbar {
+    display: none;
+}
+
+#mobile-back {
+    display: none;
+}
+
+#back:has(a), #mobile-back:has(a) {
+    margin: 2.5rem 0 0 1rem;
+}
+
+#back > a, #mobile-back > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: color-mix(in srgb, lightgray 100%, lightgray 100%);
+}
+
+#navbar > a, #mobile-navbar > a {
+    background-color: rgb(241, 199, 148);
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    margin: 0 0.5rem 0 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+#selected {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.5rem 0.5rem rgb(192, 156, 113);
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes hover-effect {
+    1% {transform: translate(-0.25rem, -0.25rem); box-shadow: 0.5rem 0.5rem rgb(192, 156, 113);}
+}
+
+#navbar > a:not(#selected):hover {
+    animation-name: hover-effect;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+}
+
+@media (width <= 768px) {
+    #navbar, #back {
+        display: none;
+    }
+
+    #mobile-navbar-container {
+        height: fit-content;
+    }
+
+    #mobile-navbar {
+        background-color: bisque;
+        display: flex;
+        position: sticky;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+        padding: 15px 0 15px;
+        bottom: 0;
+    }
+
+    #mobile-back {
+        display: block;
+        position: sticky;
+        padding: 30px 0 30px;
+        bottom: 0;
+    }
+}

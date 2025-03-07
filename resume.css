@@ -1,0 +1,60 @@
+@import "background-colors.css";
+
+body {
+    background-color: var(--website-bg, bisque);
+}
+
+#resume-link {
+    background-color: lightgray;
+    padding: 1rem;
+    border: 0.25rem solid black;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0.25rem 0.25rem black;
+    transition: 0.1s ease-in-out;
+}
+
+#resume-link:active {
+    transform: translate(0.25rem, 0.25rem);
+    box-shadow: none;
+    transition: 0.1s ease-in-out;
+}
+
+#resume-header, #resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume-header > p {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+}
+
+#mobile-resume-container {
+    display: none;
+}
+
+.section-subheaders {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (width <= 768px) {
+    #resume-container {
+        display: none;
+    }
+
+    #mobile-resume-container {
+        display: block;
+
+        #resume-header {
+            margin-top: 1rem;
+        }
+    }
+}

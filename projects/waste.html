@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Justin Tran's Portfolio</title>
+        <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../navbar.css" rel="stylesheet">
+        <link href="../styles/project_page.css" rel="stylesheet">
+    </head>
+    <body id="e-waste">
+        <header>
+            <nav id="back">
+                <a href="/projects.html">&lt; Back</a>
+            </nav>
+        </header>
+        <main>
+            <h2>E-Waste Website</h2>
+            <hr>
+            <div class="project-info">
+                <section class="left-panel">
+                    <picture>
+                        <source srcset="/public/Desktop/e-waste.webp" media="(min-width: 1024px)">
+                        <img class="thumbnail" src="/public/Mobile/e-waste-mobile.webp" alt="a thumbnail of the homepage for my spending tracker app">
+                    </picture>
+                    <div class="social-media-links">
+                        <a href="https://github.com/Jussttin9/ewaste-project"><img src="/public/github-mark.png" height="50" width="52" alt="Github link"></a>
+                        <a href="https://syn100-ewaste.vercel.app/"><img src="/public/website.png" height="50" width="52" alt="Deployed website link"></a>
+                    </div>
+                </section>
+                <article class="right-panel">
+                    <section class="project-desc">
+                        <h3> Technologies Used</h3>
+                        <ul>
+                            <li>ReactJS</li>
+                            <li>Typescript</li>
+                            <li>NextJS</li>
+                            <li>SCSS</li>
+                            <li>Figma</li>
+                        </ul>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Information</h3>
+                        <p>The goal of this E-waste website is to promote and educate college students on how to properly dispose of electronic waste both on and off campus. It provides users an intro to what e-waste is and why it's so detrimental to our environment. In addition, it also talks about planned and perceived obsolescence and how they contribute to the rising amounts of unrecycled e-waste. Finally, to make things more fun, we've provided a fun personality quiz that users can take!</p>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Struggles and Solutions</h3>
+                        <p>Me and my team of developers and designers wanted to help raise awareness to the amount of e-waste that gets produced each year at UCSD so we decided that the best way to do this was to create a website providing some insight on some terms related to e-waste such as planned obsolescence while informing students about ways they can contribute to UCSD&apos;s goal to reaching net zero emissions. We had to do a bunch of research and designing in order to make it appealing to other college students, we even made a game to keep users engaged, which turned out to be one of our struggles for this project. This was my first time building a ReactJS so I found it particularly difficult to implement this but I decided that it could be done after getting some insight from more experienced React developers. After collaborating with a couple of developers from my team, they suggested that I take advantage of React's state management in order to loop through the questions. After looking at specific documentation and articles about states and effects, I ended up successfully creating a state that iterates through the indices of an array of questions every time a user clicks on an answer to one of our personality quiz questions. In addition, I managed to make it so that it tracks the user's decisions and at the end of the quiz, reveal to the user what personality type fits them best. With this being incorporated into the Seventh College orientation, I hope that my contribution to this project has brang more awareness to the e-waste problems at UCSD.</p>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <nav id="mobile-back">
+            <a href="/projects.html">&lt; Back</a>
+        </nav>
+    </body>
+</html>

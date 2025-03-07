@@ -1,0 +1,94 @@
+@import "background-colors.css";
+
+body {
+    background-color: var(--website-bg, bisque);
+}
+
+project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffd3ad;
+    margin: 2rem;
+    padding-top: 1rem;
+    height: 70vh;
+    width: 40vw;
+}
+
+project-card > h1 {
+    text-align: center;
+}
+
+project-card img {
+    margin: 1rem 0;
+    height: 35vh;
+    width: 35vw;
+}
+
+#project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-page-link {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #f3b47a;
+}
+
+.project-description {
+    background-color: #f3b47a;
+    overflow-y: scroll;
+    padding: 1rem;
+    width: 35vw;
+    height: 5vw;
+    text-align: center;
+}
+
+@media (width <= 768px) {
+    project-card {
+        height: 70vh;
+        width: 70vw;
+    }
+
+    project-card img {
+        width: 65vw;
+    }
+
+    .project-description {
+        width: 61vw;
+    }
+}
+
+@media (width <= 425px) {
+    project-card {
+        height: 60vh;
+    }
+    
+    project-card > h1 {
+        font-size: 1.5em;
+    }
+
+    project-card img {
+        height: 20vh;
+        width: 50vw;
+    }
+
+    .project-page-link {
+        width: 30vw;
+        font-size: 1em;
+    }
+
+    .project-description {
+        height: 20vw;
+        width: 50vw;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Justin Tran's Portfolio</title>
+        <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../navbar.css" rel="stylesheet">
+        <link href="../styles/project_page.css" rel="stylesheet">
+    </head>
+    <body id="haunted-mansion">
+        <header>
+            <nav id="back">
+                <a href="/projects.html">&lt; Back</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Haunted Mansion</h2>
+            <hr>
+            <div class="project-info">
+                <section class="left-panel">
+                    <picture>
+                        <source srcset="/public/Desktop/text-based-game.webp" media="(min-width: 1024px)">
+                        <img class="thumbnail" src="/public/Mobile/text-based-game-mobile.webp" alt="a thumbnail of the homepage for my spending tracker app">
+                    </picture>
+                    <div class="social-media-links">
+                        <a href="https://github.com/Jussttin9/Haunted-Mansion"><img src="/public/github-mark.png" height="50" width="52" alt="Github link"></a>
+                    </div>
+                </section>
+                <article class="right-panel">
+                    <section class="project-desc">
+                        <h3> Technologies Used</h3>
+                        <ul>
+                            <li>C++</li>
+                        </ul>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Information</h3>
+                        <p>Haunted Mansion is a text-based game that takes users through a story-driven adventure where the protagonist goes through an old, abandoned building. There are a total of 6 different endings that the users can receive based on their actions throughout the game. Try it out to find all the endings!</p>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Struggles and Solutions</h3>
+                        <p>This was my first time creating my own coding project. I&apos;d just finished taking an Object-Oriented Programming class and had learn about the basic data structures such as arrays and linked lists. For my first project, I wanted to create a simple game. I had always loved adventure games and visual novels, where players could read a bunch of dialogue and make choices to conclude to a certain ending based on those decisions. A choices-matter type of game. I had a general story plot in mind but I wanted players to be able to interact with locations and use items to unlock certain areas. Therefore, I needed to plan out a way to keep track of the player&apos;s items as they play. I originally thought about using an array to store the items but it wasn&apos;t very efficient when it came to removing and finding a specific item. A similar case for linked lists, in order to figure out whether a player had a specific item, we&apos;d have to iterate through the entire linked list. Since there were operations that run in O(n) time when using arrays and linked list, I needed to find something faster. This is when I started doing some research on ways to make adding items, removing items, and checking an item&apos;s existence more efficient. This is when I came across and decided to use a hashmap, which checks all of the boxes. By using a hashmap, I&apos;m able to check an item&apos;s existence by checking its corresponding key value. In addition, adding and removing these items are fairly easy as well, all running in O(1) time.</p>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <nav id="mobile-back">
+            <a href="/projects.html">&lt; Back</a>
+        </nav>
+    </body>
+</html>

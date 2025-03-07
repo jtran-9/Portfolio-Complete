@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Justin Tran's Portfolio</title>
+        <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../navbar.css" rel="stylesheet">
+        <link href="../styles/project_page.css" rel="stylesheet">
+    </head>
+    <body id="dev-journal">
+        <header>
+            <nav id="back">
+                <a href="/projects.html">&lt; Back</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Developer Journal</h2>
+            <hr>
+            <div class="project-info">
+                <section class="left-panel">
+                    <picture>
+                        <source srcset="/public/Desktop/dev-journal.webp" media="(min-width: 1024px)">
+                        <img class="thumbnail" src="/public/Mobile/dev-journal-mobile.webp" alt="a thumbnail of the homepage for my spending tracker app">
+                    </picture>
+                    <div class="social-media-links">
+                        <a href="https://github.com/cse110-sp24-group32/cse110-sp24-group32"><img src="/public/github-mark.png" height="50" width="52" alt="Github link"></a>
+                        <a href="https://cse110-sp24-group32.github.io/cse110-sp24-group32/"><img src="/public/website.png" height="50" width="52" alt="Deployed website link"></a>
+                    </div>
+                </section>
+                <article class="right-panel">
+                    <section class="project-desc">
+                        <h3> Technologies Used</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Information</h3>
+                        <p>This developer journal provides a more organized environment for developers to keep all of their thoughts such as code snippets, github issues, design notes, meeting notes, and freeform notes. The journal can store multiple projects and each project can contain an unlimited amount of different notes in it in order for developers to separate their notes based on each project. There are export and import options that allow developers to save their journal and either move it to another device or to send to another developer so they can upload a copy of their journal. Finally, there is also a chatbot feature where users can use a chatbot API and enter a query and receive an appropriate response.</p>
+                    </section>
+                    <section class="project-desc">
+                        <h3>General Struggles and Solutions</h3>
+                        <p>Me and a group of developers were tasked to create a journal specifically for developers. We decided to start by brainstorming a bunch of features that developers may want in a journal such as a note that allows for markdown and also code snippets. In addition, we thought it would be helpful to include design and meeting notes in order to organize the Figma designs that their currently trying to recreate on the front end and also organize thoughts, comments and feedback from any meetings they may have. The main struggle we had was figuring out a way to export and import journal data. This would allow developers to save and export their projects notes from their journal and import it into a journal on another device. This would provide users with more flexibility when it comes to data transfer and would allow developers to collaborate by sharing each other's notes. After some thought, we decided that we could serialize the data into json files and export that json file for users to download and in order to transfer that data, users could just import that json file into our website, in which we'd deserialize the data, then import all of the data into the website for them to use!</p>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <nav id="mobile-back">
+            <a href="/projects.html">&lt; Back</a>
+        </nav>
+    </body>
+</html>
