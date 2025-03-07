@@ -1,14 +1,15 @@
-@import "background-colors.css";
+@import "./theme-colors.css";
 
 body {
     background-color: var(--website-bg, bisque);
+    color: var(--main-text, black);
 }
 
 project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffd3ad;
+    background-color: var(--project-card-bg, #ffd3ad);
     margin: 2rem;
     padding-top: 1rem;
     height: 70vh;
@@ -35,17 +36,17 @@ project-card img {
 .project-page-link {
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: var(--main-text, black);
     font-size: 1em;
     margin: 1.5rem 0 1.5rem 0;
     padding: 1rem;
     border-radius: 20px;
-    background-color: #f3b47a;
+    background-color: var(--project-card-component, #f3b47a);
 }
 
 .project-description {
-    background-color: #f3b47a;
-    overflow-y: scroll;
+    background-color: var(--project-card-component, #f3b47a);
+    overflow-y: auto;
     padding: 1rem;
     width: 35vw;
     height: 5vw;

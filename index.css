@@ -1,9 +1,10 @@
-@import "background-colors.css";
-@font-face { font-family: 'Source Code Pro'; src: url('SourceCodePro-Regular.ttf'); }
-@font-face { font-family: 'Source Code Pro Bold'; src: url('SourceCodePro-Bold.ttf'); }
+@import "./styles/theme-colors.css";
+@font-face { font-family: 'Source Code Pro'; src: url('./fonts/SourceCodePro-Regular.ttf'); }
+@font-face { font-family: 'Source Code Pro Bold'; src: url('./fonts/SourceCodePro-Bold.ttf'); }
 
 body {
     background-color: var(--website-bg, bisque);
+    color: var(--main-text, black);
 }
 
 .intro-container {
@@ -33,7 +34,7 @@ body {
 }
 
 #picture {
-    border: 0.5rem solid rgb(192, 156, 113);
+    border: 0.5rem solid var(--shadow, rgb(192, 156, 113));
     border-radius: 5px;
 }
 

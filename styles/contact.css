@@ -1,0 +1,53 @@
+@import "./theme-colors.css";
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-self: center;
+    border: 4px solid var(--project-card-component, #f3b47a);
+    padding: 2rem;
+    background-color: var(--project-card-bg, #ffd3ad);
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    width: fit-content;
+}
+
+form label + * {
+    margin-bottom: 1rem;
+}
+
+form button {
+    height: 2rem;
+    width: 10vw;
+    min-width: fit-content;
+    align-self: center;
+}
+
+label:has( + input[required])::after {
+    content: '*';
+    color: red;
+    float: right;
+}
+
+input[required] {
+    height: 2rem;
+}
+
+#comments {
+    resize: none;
+    height: 10vh;
+}
+
+#error, #info {
+    display: none;
+}
+
+.output-message {
+    margin-bottom: 0.5rem;
+}

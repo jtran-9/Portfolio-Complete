@@ -1,7 +1,8 @@
-@import "background-colors.css";
+@import "./theme-colors.css";
 
 body {
     background-color: var(--website-bg, bisque);
+    color: var(--main-text, black);
 }
 
 .about-me-container {
@@ -21,10 +22,10 @@ body {
 
 .info-section {
     width: 60vw;
-    background-color: blanchedalmond;
+    background-color: var(--description-bg, blanchedalmond);
     margin-bottom: 2rem;
     padding: 0.5rem;
-    border: 0.5rem solid rgb(222, 200, 166);
+    border: 0.5rem solid var(--description-border, rgb(222, 200, 166));
     border-radius: 5px;
 }
 

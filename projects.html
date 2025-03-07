@@ -4,16 +4,20 @@
     <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Justin Tran's Portfolio</title>
-    <link href="./navbar.css" rel="stylesheet">
-    <link href="./projects.css" rel="stylesheet">
+    <link href="./styles/navbar.css" rel="stylesheet">
+    <link href="./styles/projects.css" rel="stylesheet">
+    <link href="./styles/theme-selector.css" rel="stylesheet">
   </head>
   <body>
-        <header>
+        <header id="top-bar">
+            <button id="theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
             <nav id="navbar">
                 <a href="/index.html">Home</a>
                 <a href="/about.html">About Me</a>
                 <a id="selected" href="/projects.html">Projects</a>
                 <a href="/resume.html">Resume</a>
+                <a href="/form-no-js.html">No JS Form</a>
+                <a href="/form-js.html">JS Form</a>
             </nav>
         </header>
         <main id="project-card-container">
@@ -77,6 +81,8 @@
             <a href="/about.html">About Me</a>
             <a id="selected" href="/projects.html">Projects</a>
             <a href="/resume.html">Resume</a>
+            <button id="mobile-theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
         </nav>
   </body>
+  <script src="./js/theme-switch.js"></script>
 </html>

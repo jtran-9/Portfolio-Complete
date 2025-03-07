@@ -1,11 +1,12 @@
-@import "background-colors.css";
+@import "./theme-colors.css";
 
 body {
     background-color: var(--website-bg, bisque);
+    color: var(--main-text, black);
 }
 
 #resume-link {
-    background-color: lightgray;
+    background-color: var(--button-bg, lightgray);
     padding: 1rem;
     border: 0.25rem solid black;
     border-radius: 20px;

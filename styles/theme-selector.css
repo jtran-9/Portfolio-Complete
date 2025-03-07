@@ -1,0 +1,38 @@
+@import "./theme-colors.css";
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#theme-selector {
+    visibility: hidden;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 10%;
+    background-color: var(--component-bg, rgb(241, 199, 148));
+    color: var(--main-text, black);
+}
+
+#mobile-theme-selector {
+    display: none;
+}
+
+@media (width <= 768px) {
+    #theme-selector {
+        display: none;
+    }
+
+    #mobile-theme-selector {
+        padding: 1rem;
+        background-color: var(--component-bg, rgb(241, 199, 148));
+        color: var(--main-text, black);
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        justify-self: center;
+        min-width: fit-content;
+    }
+}

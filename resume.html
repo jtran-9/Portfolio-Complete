@@ -4,21 +4,25 @@
         <title>Justin Tran's Portfolio</title>
         <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./resume.css" rel="stylesheet">
-        <link href="./navbar.css" rel="stylesheet">
+        <link href="./styles/resume.css" rel="stylesheet">
+        <link href="./styles/navbar.css" rel="stylesheet">
+        <link href="./styles/theme-selector.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="top-bar">
+            <button id="theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
             <nav id="navbar">
                 <a href="/index.html">Home</a>
                 <a href="/about.html">About Me</a>
                 <a href="/projects.html">Projects</a>
                 <a id="selected" href="/resume.html">Resume</a>
+                <a href="/form-no-js.html">No JS Form</a>
+                <a href="/form-js.html">JS Form</a>
             </nav>
         </header>
         <main>
             <div id="resume-container">
-                <a id="resume-link" href="/Resume.pdf">View Resume PDF</a>
+                <a id="resume-link" href="./public/Resume.pdf">View Resume PDF</a>
                 <hr>
             </div>
             <section id="resume-header">
@@ -107,7 +111,7 @@
             <section id="mobile-resume-container">
                 <hr>
                 <div id="resume-header">
-                    <a id="resume-link" href="/Resume.pdf">View Resume PDF</a>
+                    <a id="resume-link" href="./public/Resume.pdf">View Resume PDF</a>
                 </div>
             </section>
         </main>
@@ -116,6 +120,8 @@
             <a href="/about.html">About Me</a>
             <a href="/projects.html">Projects</a>
             <a id="selected" href="/resume.html">Resume</a>
+            <button id="mobile-theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
         </nav>
     </body>
+    <script src="./js/theme-switch.js"></script>
 </html>

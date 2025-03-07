@@ -1,3 +1,5 @@
+@import "./theme-colors.css";
+
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -18,18 +20,18 @@
 
 #back > a, #mobile-back > a {
     text-decoration: none;
-    color: black;
+    color: var(--main-text, black);
     font-size: 1.25em;
     padding: 1rem;
     border-radius: 10px;
-    background-color: color-mix(in srgb, lightgray 100%, lightgray 100%);
+    background-color: var(--back-button-bg, color-mix(in srgb, lightgray 100%, lightgray 100%));
 }
 
 #navbar > a, #mobile-navbar > a {
-    background-color: rgb(241, 199, 148);
+    background-color: var(--component-bg, rgb(241, 199, 148));
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: var(--main-text, black);
     padding: 1rem;
     margin: 0 0.5rem 0 0.5rem;
     transition: 0.5s ease-in-out;
@@ -37,12 +39,12 @@
 
 #selected {
     transform: translate(-0.25rem, -0.25rem);
-    box-shadow: 0.5rem 0.5rem rgb(192, 156, 113);
+    box-shadow: 0.5rem 0.5rem var(--shadow, rgb(192, 156, 113));
     transition: 0.5s ease-in-out;
 }
 
 @keyframes hover-effect {
-    1% {transform: translate(-0.25rem, -0.25rem); box-shadow: 0.5rem 0.5rem rgb(192, 156, 113);}
+    1% {transform: translate(-0.25rem, -0.25rem); box-shadow: 0.5rem 0.5rem var(--shadow, rgb(192, 156, 113));}
 }
 
 #navbar > a:not(#selected):hover {
@@ -61,7 +63,7 @@
     }
 
     #mobile-navbar {
-        background-color: bisque;
+        background-color: var(--website-bg, bisque);
         display: flex;
         position: sticky;
         flex-wrap: wrap;

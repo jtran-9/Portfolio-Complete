@@ -1,33 +1,23 @@
-@import "background-colors.css";
+@import "./theme-colors.css";
 
 #e-waste {
     background-color: var(--e-waste-bg, rgb(253, 235, 213));
-
-    #mobile-back {
-        background-color: var(--e-waste-bg, rgb(253, 235, 213));
-    }
+    color: var(--main-text, black);
 }
 
 #dev-journal, #datasaur, #haunted-mansion {
     background-color: var(--other-bg, rgb(141, 141, 153));
-
-    #mobile-back {
-        background-color: var(--other-bg, rgb(141, 141, 153));
-    }
+    color: var(--main-text, black);
 }
 
 #geoguru {
     background-color: var(--geoguru-bg, rgb(255, 210, 218));
-
-    #mobile-back {
-        background-color: var(--geoguru-bg, rgb(255, 210, 218));
-    }
+    color: var(--main-text, black);
 }
 
 #spending-tracker {
-    #mobile-back {
-        background-color: white;
-    }
+    background-color: var(--spending-bg, white);
+    color: var(--main-text, black);
 }
 
 h2 {
@@ -38,7 +28,7 @@ h2 {
     width: 40vw;
     margin-top: 1.5rem;
     border: 2px solid black;
-    box-shadow: 10px 10px;
+    box-shadow: 10px 10px black;
 }
 
 .project-info {

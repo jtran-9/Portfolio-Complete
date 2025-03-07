@@ -1,0 +1,55 @@
+:root {
+    /* home page */
+    --website-bg: bisque;
+
+    /* navbar */
+    --component-bg: rgb(241, 199, 148);
+    --shadow: rgb(192, 156, 113);
+    --back-button-bg: color-mix(in srgb, lightgray 100%, lightgray 100%);
+
+    /* about page */
+    --description-bg: blanchedalmond;
+    --description-border: rgb(222, 200, 166);
+
+    /* projects page */
+    --project-card-bg: #ffd3ad;
+    --project-card-component: #f3b47a;
+
+    /* typography */
+    --main-text: black;
+    --button-bg: lightgray;
+
+    /* projects page */
+    --spending-bg: white;
+    --e-waste-bg: rgb(253, 235, 213);
+    --geoguru-bg: rgb(255, 210, 218);
+    --other-bg: rgb(141, 141, 153);
+}
+
+[theme="dark"] {
+    /* home page */
+    --website-bg: #A47856;
+
+    /* navbar */
+    --component-bg: #D8A873;
+    --shadow: rgb(168, 139, 109);
+    --back-button-bg: rgb(78, 78, 78);
+
+    /* about page */
+    --description-bg: rgb(210, 172, 116);
+    --description-border: rgb(232, 187, 119);
+
+    /* projects page */
+    --project-card-bg: #d6a478;
+    --project-card-component: #c29871;
+
+    /* typography */
+    --main-text: white;
+    --button-bg: rgb(238, 173, 138);
+
+    /* projects page */
+    --spending-bg: rgb(141, 141, 153);
+    --e-waste-bg: rgb(174, 144, 107);
+    --geoguru-bg: rgb(183, 115, 128);
+    --other-bg: rgb(141, 141, 153);
+}
