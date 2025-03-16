@@ -14,6 +14,7 @@
     width: 10%;
     background-color: var(--component-bg, rgb(241, 199, 148));
     color: var(--main-text, black);
+    cursor: pointer;
 }
 
 #mobile-theme-selector {
@@ -27,6 +28,7 @@
 
     #mobile-theme-selector {
         padding: 1rem;
+        cursor: pointer;
         background-color: var(--component-bg, rgb(241, 199, 148));
         color: var(--main-text, black);
         margin: 0 0.5rem 0 0.5rem;

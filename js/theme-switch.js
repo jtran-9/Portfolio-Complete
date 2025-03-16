@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.documentElement.setAttribute("theme", currentTheme);
     themeSwitcher.textContent = currentTheme === "dark" ? "Switch To Light Mode" : "Switch To Dark Mode";
+
+    themeSwitcher.addEventListener('click', switchTheme);
+    mobileThemeSwitcher.addEventListener('click', switchTheme);
 });
 
 window.addEventListener("resize", () => {
