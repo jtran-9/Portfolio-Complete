@@ -107,5 +107,7 @@ body {
         background: var(--website-bg, bisque);
         border: none;
         cursor: pointer;
+        position: sticky;
+        bottom: 10px;
     }
 }

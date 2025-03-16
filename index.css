@@ -47,9 +47,4 @@ body {
     body {
         height: 93vh;
     }
-
-    #mobile-nav {
-        position: absolute;
-        bottom: 10px;
-    }
 }
