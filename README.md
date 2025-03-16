@@ -1,5 +1,4 @@
 # Portfolio-Styled
 
 ### Changes Made to Portfolio Website (Part 3)
-- Replace navbar buttons on mobile with hamburger menu
-- Separate JavaScript function calls out of HTML files such as switchTheme() and loadRemote() and loadLocalStorage()
+Previously, on mobile, the nav buttons were just stick to the bottom of the screen. But this causes some clutter on the screen, making the viewport for users a lot smaller on mobile. To fix this, I've reduced the nav bar on mobile to a hamburger menu. The user can now just click on the hamburger icon on the bottom left of the screen and the mobile nav bar will slide into view and cover the entire screen. This lets the viewer access the navbar without all that clutter in the viewport. Additionally, I moved all the onclick attributes and instead, added click event listeners to buttons instead. Before, the HTML and JS were intermixed together which goes against separation of concerns. To keep everything separated and more organized, instead of onclick attributes, in the JavaScript files, I added click event listeners to the buttons on DOMContentLoaded. This preserves the original functionality while also maintaining separation of concerns principle. 
