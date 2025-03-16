@@ -7,6 +7,7 @@
         <link href="./styles/navbar.css" rel="stylesheet">
         <link href="./index.css" rel="stylesheet">
         <link href="./styles/theme-selector.css" rel="stylesheet">
+        <script src="./js/mobile-nav.js"></script>
     </head>
     <body>
         <header id="top-bar">
@@ -16,8 +17,6 @@
                 <a href="/about.html">About Me</a>
                 <a href="/projects.html">Projects</a>
                 <a href="/resume.html">Resume</a>
-                <a href="/form-no-js.html">No JS Form</a>
-                <a href="/form-js.html">JS Form</a>
             </nav>
         </header>
         <main class="intro-container">
@@ -41,7 +40,11 @@
             <a href="/projects.html">Projects</a>
             <a href="/resume.html">Resume</a>
             <button id="mobile-theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
+            <a id="mobile-back">&lt; Back</a>
         </nav>
     </body>
+    <footer>
+        <button id="mobile-nav"><img src="/public/hamburger_icon.svg"></button>
+    </footer>
     <script src="./js/theme-switch.js"></script>
 </html>

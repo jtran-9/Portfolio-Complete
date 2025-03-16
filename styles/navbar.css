@@ -1,5 +1,9 @@
 @import "./theme-colors.css";
 
+body {
+    overflow: auto;
+}
+
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -7,18 +11,22 @@
 }
 
 #mobile-navbar {
+    transform: translateX(-100vw);
+}
+
+#mobile-nav {
     display: none;
 }
 
-#mobile-back {
+#project-back {
     display: none;
 }
 
-#back:has(a), #mobile-back:has(a) {
+#back:has(a), #project-back:has(a) {
     margin: 2.5rem 0 0 1rem;
 }
 
-#back > a, #mobile-back > a {
+#back > a, #mobile-back > a, #project-back > a {
     text-decoration: none;
     color: var(--main-text, black);
     font-size: 1.25em;
@@ -58,25 +66,46 @@
         display: none;
     }
 
-    #mobile-navbar-container {
-        height: fit-content;
-    }
-
     #mobile-navbar {
+        height: 97vh;
+        width: 98vw;
+        z-index: 2;
         background-color: var(--website-bg, bisque);
         display: flex;
-        position: sticky;
+        flex-direction: column;
+        position: fixed;
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 1rem;
-        padding: 15px 0 15px;
+        padding: 15px 0;
         bottom: 0;
+        transition: 0.5s ease;
     }
 
     #mobile-back {
+        max-height: 4%;
+        width: 10%;
+    }
+
+    #project-back, #mobile-nav {
         display: block;
-        position: sticky;
-        padding: 30px 0 30px;
-        bottom: 0;
+    }
+
+    #mobile-navbar > a, #mobile-navbar > button {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobile-navbar > button {
+        margin-bottom: 5rem;
+    }
+
+    #mobile-nav {
+        padding: 10px;
+        background: var(--website-bg, bisque);
+        border: none;
+        cursor: pointer;
     }
 }

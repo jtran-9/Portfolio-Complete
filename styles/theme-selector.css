@@ -29,7 +29,7 @@
         padding: 1rem;
         background-color: var(--component-bg, rgb(241, 199, 148));
         color: var(--main-text, black);
-        margin: 0;
+        margin: 0 0.5rem 0 0.5rem;
         border-radius: 0;
         border: none;
         justify-self: center;

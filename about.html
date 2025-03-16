@@ -8,6 +8,7 @@
         <link href="./styles/about.css" rel="stylesheet">
         <link href="./styles/contact.css" rel="stylesheet">
         <link href="./styles/theme-selector.css" rel="stylesheet">
+        <script src="./js/mobile-nav.js"></script>
     </head>
     <body>
         <header id="top-bar">
@@ -17,8 +18,6 @@
                 <a id="selected" href="/about.html">About Me</a>
                 <a href="/projects.html">Projects</a>
                 <a href="/resume.html">Resume</a>
-                <a href="/form-no-js.html">No JS Form</a>
-                <a href="/form-js.html">JS Form</a>
             </nav>
         </header>
         <main class="about-me-container">
@@ -54,35 +53,37 @@
                 </section>
             </div>
         </main>
-        <footer>
-            <form id="contact-form" action="" method="GET">
-                <h1>Contact Me!</h1>
-
-                <label for="name">Name</label>
-                <input type="text" id="name" class="required-field" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" class="required-field" name="email" required>
-
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" maxlength="300"></textarea>
-
-                <input type="hidden" name="possible_bot" value="true">
-
-                <output id="error" class="output-message"></output>
-                <output id="info" class="output-message"></output>
-
-                <button id="submit" type="submit" onclick="validateFields()">Submit</button>
-            </form>
-        </footer>
         <nav id="mobile-navbar">
             <a href="/index.html">Home</a>
             <a id="selected" href="/about.html">About Me</a>
             <a href="/projects.html">Projects</a>
             <a href="/resume.html">Resume</a>
             <button id="mobile-theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
+            <a id="mobile-back">&lt; Back</a>
         </nav>
-        <script src="./js/form.js"></script>
-        <script src="./js/theme-switch.js"></script>
+        <footer>
+            <form id="contact-form" action="" method="GET">
+                <h1>Contact Me!</h1>
+    
+                <label for="name">Name</label>
+                <input type="text" id="name" class="required-field" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" class="required-field" name="email" required>
+    
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" maxlength="300"></textarea>
+    
+                <input type="hidden" name="possible_bot" value="true">
+    
+                <output id="error" class="output-message"></output>
+                <output id="info" class="output-message"></output>
+    
+                <button id="submit" type="submit" onclick="validateFields()">Submit</button>
+            </form>
+        </footer>
+        <button id="mobile-nav"><img src="/public/hamburger_icon.svg"></button>
     </body>
+    <script src="./js/form.js"></script>
+    <script src="./js/theme-switch.js"></script>
 </html>

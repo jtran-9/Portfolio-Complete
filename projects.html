@@ -7,31 +7,32 @@
     <link href="./styles/navbar.css" rel="stylesheet">
     <link href="./styles/projects.css" rel="stylesheet">
     <link href="./styles/theme-selector.css" rel="stylesheet">
+    <script src="./js/mobile-nav.js"></script>
   </head>
   <body>
-        <header id="top-bar">
-            <button id="theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
-            <nav id="navbar">
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About Me</a>
-                <a id="selected" href="/projects.html">Projects</a>
-                <a href="/resume.html">Resume</a>
-                <a href="/form-no-js.html">No JS Form</a>
-                <a href="/form-js.html">JS Form</a>
-            </nav>
-        </header>
-        <div id="load-button-container">
-            <button onclick="loadLocalStorage()">Load Local</button>
-            <button onclick="loadRemote()">Load Remote</button>
-        </div>
-        <main id="project-card-container"></main>
-        <nav id="mobile-navbar">
+    <header id="top-bar">
+        <button id="theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
+        <nav id="navbar">
             <a href="/index.html">Home</a>
             <a href="/about.html">About Me</a>
             <a id="selected" href="/projects.html">Projects</a>
             <a href="/resume.html">Resume</a>
-            <button id="mobile-theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
         </nav>
+    </header>
+    <div id="load-button-container">
+        <button onclick="loadLocalStorage()">Load Local</button>
+        <button onclick="loadRemote()">Load Remote</button>
+    </div>
+    <main id="project-card-container"></main>
+    <nav id="mobile-navbar">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Me</a>
+      <a id="selected" href="/projects.html">Projects</a>
+      <a href="/resume.html">Resume</a>
+      <button id="mobile-theme-selector" onclick="switchTheme()">Switch To Dark Mode</button>
+      <a id="mobile-back">&lt; Back</a>
+    </nav>
+    <button id="mobile-nav"><img src="/public/hamburger_icon.svg"></button>
   </body>
   <script src="./js/theme-switch.js"></script>
   <script src="./js/project-card.js"></script>
