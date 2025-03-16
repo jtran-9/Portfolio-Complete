@@ -237,4 +237,11 @@ function loadRemote() {
 document.addEventListener("DOMContentLoaded", () => {
     populateLocalStorage();
     loadLocalStorage();
+
+    const loadLocalButton = document.getElementById('load-local');
+    const loadRemoteButton = document.getElementById('load-remote');
+
+    loadLocalButton.addEventListener('click', loadLocalStorage);
+
+    loadRemoteButton.addEventListener('click', loadRemote);
 });
